@@ -1,0 +1,79 @@
+# ===========================
+# DATA FILES - never push raw or processed data
+# ===========================
+data/raw/*
+data/processed/*
+# Keep the folder structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ===========================
+# LARGE DATA FORMATS
+# ===========================
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.json
+*.zip
+*.gz
+*.tar
+
+# ===========================
+# TRAINED MODELS - usually too large
+# ===========================
+models/*.pkl
+models/*.h5
+models/*.pt
+models/*.pth
+models/*.joblib
+models/*.bin
+
+# ===========================
+# PYTHON
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ===========================
+# VIRTUAL ENVIRONMENT
+# ===========================
+venv/
+env/
+.venv/
+.env
+
+# ===========================
+# JUPYTER NOTEBOOKS
+# ===========================
+.ipynb_checkpoints/
+
+# ===========================
+# OS FILES
+# ===========================
+.DS_Store
+Thumbs.db
+
+# ===========================
+# IDE FILES
+# ===========================
+.vscode/
+.idea/
+*.suo
+*.user
+
+# ===========================
+# SECRETS & KEYS - NEVER push these
+# ===========================
+.env
+*.env
+secrets.yaml
+credentials.json
+api_keys.txt
